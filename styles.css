@@ -1,59 +1,141 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    background-color: #121212;
+    color: #e0e0e0;
 }
 
+/* Header Styles */
 header {
-    background: #333;
+    background-color: #ff6f61;
     color: #fff;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
+    border-bottom: 5px solid #ff3b2e;
 }
 
 header h1 {
     margin: 0;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
 }
 
 header nav ul {
     list-style: none;
     padding: 0;
+    margin-top: 10px;
 }
 
 header nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 header nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
 }
 
+header nav ul li a:hover {
+    color: #ff3b2e;
+}
+
+/* Section Styles */
 section {
-    padding: 20px;
-    margin: 20px;
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    background-color: #282828;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 section#about {
-    background: #f4f4f4;
+    background-color: #ff4f4f;
+    color: #fff;
 }
 
-section#projects .project {
-    background: #e2e2e2;
-    margin: 10px 0;
-    padding: 10px;
+section#resume {
+    background-color: #f4b400;
+    color: #fff;
+}
+
+section#projects {
+    background-color: #34a853;
+    color: #fff;
 }
 
 section#contact {
-    background: #f4f4f4;
-    text-align: center;
+    background-color: #4285f4;
+    color: #fff;
 }
 
+/* Section Headings */
+section h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Project Section */
+.project {
+    background-color: #1e88e5;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #ffeb3b;
+}
+
+.project p {
+    margin-bottom: 10px;
+}
+
+.project a {
+    color: #ffeb3b;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.project a:hover {
+    color: #ff6f00;
+}
+
+/* Footer Styles */
 footer {
     text-align: center;
-    padding: 10px;
-    background: #333;
+    padding: 20px;
+    background-color: #ff3b2e;
     color: #fff;
+    border-top: 5px solid #ff6f61;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.1em;
 }
