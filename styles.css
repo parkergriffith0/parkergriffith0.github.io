@@ -4,28 +4,28 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #121212;
-    color: #e0e0e0;
+    background-color: #f7f7f7; /* Light gray background for a clean look */
+    color: #333; /* Dark gray text for better readability */
 }
 
 /* Header Styles */
 header {
-    background-color: #ff6f61;
+    background-color: #333; /* Dark header for a strong, professional feel */
     color: #fff;
     padding: 20px 0;
     text-align: center;
-    border-bottom: 5px solid #ff3b2e;
+    border-bottom: 4px solid #f4b400; /* Yellow accent for a pop of color */
 }
 
 header h1 {
     margin: 0;
     font-size: 2.5em;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 header p {
-    margin: 10px 0 0;
+    margin: 5px 0 0;
     font-size: 1.2em;
 }
 
@@ -41,7 +41,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #fff;
+    color: #f4b400; /* Yellow links to tie in the accent color */
     text-decoration: none;
     font-weight: bold;
     font-size: 1.1em;
@@ -49,89 +49,86 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #ff3b2e;
+    color: #ffd54f; /* Slightly lighter yellow on hover */
 }
 
 /* Section Styles */
 section {
     padding: 40px 20px;
     margin: 20px auto;
-    max-width: 800px;
+    max-width: 900px;
+    background-color: #fff; /* White background for content sections */
     border-radius: 8px;
-    background-color: #282828;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
-section#about {
-    background-color: #ff4f4f;
-    color: #fff;
-}
-
-section#resume {
-    background-color: #f4b400;
-    color: #fff;
-}
-
-section#projects {
-    background-color: #34a853;
-    color: #fff;
-}
-
-section#contact {
-    background-color: #4285f4;
-    color: #fff;
-}
-
-/* Section Headings */
 section h2 {
     text-align: center;
     font-size: 2em;
     margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    color: #333; /* Consistent dark gray for headings */
+    border-bottom: 2px solid #f4b400; /* Yellow underline to highlight headings */
+    padding-bottom: 10px;
 }
 
 /* Project Section */
 .project {
-    background-color: #1e88e5;
+    background-color: #f7f7f7; /* Light gray for a subtle project highlight */
     padding: 15px;
     border-radius: 8px;
     margin-bottom: 15px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /* Slight shadow on hover for emphasis */
 }
 
 .project h3 {
     margin-top: 0;
     font-size: 1.5em;
-    color: #ffeb3b;
+    color: #f4b400; /* Yellow for project titles to stand out */
 }
 
 .project p {
     margin-bottom: 10px;
+    color: #555; /* Medium gray for project descriptions */
 }
 
 .project a {
-    color: #ffeb3b;
+    color: #f4b400; /* Yellow links for consistency */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .project a:hover {
-    color: #ff6f00;
+    color: #ffd54f; /* Slightly lighter yellow on hover */
+}
+
+/* Contact Section */
+section#contact {
+    background-color: #333; /* Dark background for a distinct contact section */
+    color: #fff;
+    border-radius: 8px;
+}
+
+section#contact h2 {
+    color: #f4b400; /* Yellow for contact section heading */
+}
+
+section#contact a {
+    color: #ffd54f; /* Lighter yellow links for contrast */
 }
 
 /* Footer Styles */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #ff3b2e;
+    background-color: #333;
     color: #fff;
-    border-top: 5px solid #ff6f61;
+    border-top: 4px solid #f4b400; /* Yellow accent to tie the design together */
     margin-top: 40px;
 }
 
